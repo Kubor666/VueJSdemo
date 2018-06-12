@@ -36,13 +36,11 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import PostsExample from './components/Posts'
 import Contact from './components/Contact'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     PostsExample,
     Contact
   }
