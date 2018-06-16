@@ -7,6 +7,7 @@ import Posts from './components/Posts.vue'
 import Contact from './components/Contact.vue'
 import BootstrapVue from 'bootstrap-vue'
 
+
 Vue.use(BootstrapVue);
 
 Vue.use(VueRouter);

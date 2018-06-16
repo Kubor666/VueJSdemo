@@ -10,7 +10,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="post in posts" :key="post.id">
+             <tr v-for="post in posts" :key="post.id">
               <td>{{post.title}}</td>
             </tr>
           </tbody>
@@ -27,6 +27,7 @@
   export default{
     name: 'PostExample',
     data(){
+
       return {
         posts: []
       }
