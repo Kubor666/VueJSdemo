@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-
+    <loading-screen v-if="isLoading"></loading-screen>
     <nav class="site-header sticky-top py-1 color-black">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2" href="#">
@@ -37,6 +37,6 @@ export default {
 <style>
 
   @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-  @import "../static/layout.css"
+  @import "../static/layout.css";
 
 </style>
