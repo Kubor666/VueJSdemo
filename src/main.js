@@ -24,15 +24,16 @@ const routes = [
 
 ];
 
-const router= new VueRouter({routes: routes})
+const router= new VueRouter({
+  mode: 'history',
+  routes: routes})
 
 Vue.config.productionTip = false
 
-Vue.component('loading-screen', {
+/*Vue.component('loading-screen', {
  template: '<span :title="isLoading"></span>',
  props: ['isLoading'],
  data () {
-   message: ''
    return {
      pleaseWaitInstance: null
    }
@@ -57,7 +58,7 @@ Vue.component('loading-screen', {
      }
    }
  }
-})
+}) */
 
 /* eslint-disable no-new */
 new Vue({
