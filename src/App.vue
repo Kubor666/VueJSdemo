@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <loading_screen v-if="isLoading"></loading_screen>
+    <loading-screen v-if="isLoading" />
+
+    <template v-else>
     <nav class="site-header sticky-top py-1 color-black">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2 d-none d-md-inline-block" href="/">Home</a>
@@ -9,21 +11,20 @@
         <a class="py-2 d-none d-md-inline-block" href="#">About me</a>
         <a class="py-2 d-none d-md-inline-block" href="/contact">Contact</a>
       </div>
-
-</nav>
+    </nav>
 
   <router-view></router-view>
-
+</template>
   </div>
 </template>
 
 <script>
 import PostsExample from './components/Posts'
 import Contact from './components/Contact'
-import loading_screen from './components/LoadingScreen'
+import LoadingScreen from './components/LoadingScreen'
 export default {
   name: 'App',
-  data() {return{isLoading: false }
+  data() {return{isLoading: true }
   },
   mounted () {
     setTimeout(() => {
@@ -33,7 +34,7 @@ export default {
   components: {
     PostsExample,
     Contact,
-    loading_screen,
+    LoadingScreen
   }
 }
 </script>
